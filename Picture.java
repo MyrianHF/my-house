@@ -48,17 +48,22 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
+        
+        grass = new Square();
+        grass.changeColor("green");
+        grass.moveHorizontal(-315);
+        grass.moveVertical(130);
+        grass.changeSize(550);
+        grass.makeVisible();
 
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-40);
         sun.changeSize(80);
+        sun.moveVertical(60);
         sun.makeVisible();
+        sun.slowMoveVertical(-130);
         
-        grass = new Square();
-        grass.changeColor("green");
-        grass.moveVertical(150);
     }
 
     /**
